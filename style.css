@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  border-bottom: 1px solid white;
+}
+
+li {
+  font-size: 25px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+}
+
+.menuphotos {
+  width: 500px;
+  height: auto;
+}
