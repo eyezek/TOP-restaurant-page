@@ -1,3 +1,6 @@
+import { aboutTab } from "./About.js";
+import { contactTab } from "./Contact.js";
+
 const menuTab = function () {
   document.body.innerHTML = "";
   content = document.createElement("div");
@@ -59,6 +62,12 @@ const menuTab = function () {
   document.getElementById("content").appendChild(chickenWafflesPhoto);
   document.getElementById("content").appendChild(cheeseSteakFriesText);
   document.getElementById("content").appendChild(cheeseSteakFriesPhoto);
+
+  menu.addEventListener("click", menuTab);
+
+  about.addEventListener("click", aboutTab);
+
+  contact.addEventListener("click", contactTab);
 };
 
 export { menuTab };
