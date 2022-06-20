@@ -1,3 +1,6 @@
+import { menuTab } from "./Menu.js";
+import { contactTab } from "./Contact.js";
+
 const aboutTab = function () {
   document.body.innerHTML = "";
   content = document.createElement("div");
@@ -31,6 +34,12 @@ const aboutTab = function () {
   document.getElementById("content").appendChild(tuckers);
   document.getElementById("content").appendChild(restaurantPhoto);
   document.getElementById("content").appendChild(aboutText);
+
+  menu.addEventListener("click", menuTab);
+
+  about.addEventListener("click", aboutTab);
+
+  contact.addEventListener("click", contactTab);
 };
 
 export { aboutTab };
